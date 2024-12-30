@@ -161,12 +161,39 @@ input[type="radio"]:checked + .navigation .nav-dot {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding: 20px;
     background-color: #fff;
     flex: 1;
-}
+  }
+  
+  /* Khi màn hình rộng hơn 1200px, hiển thị 5 sản phẩm/hàng */
+  @media (min-width: 1200px) {
+    .product-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  /* Khi màn hình rộng từ 992px đến 1199px, hiển thị 4 sản phẩm/hàng */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Khi màn hình rộng từ 768px đến 991px, hiển thị 3 sản phẩm/hàng */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Khi màn hình nhỏ hơn 768px, hiển thị 1 sản phẩm/hàng */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 
 .product {
     text-align: center;
