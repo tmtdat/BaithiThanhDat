@@ -217,16 +217,17 @@ input[type="radio"]:checked + .navigation .nav-dot {
 .footer {
     background-color: #000000; /* Màu nền đen */
     color: white; /* Màu chữ trắng */
-    padding: ; /* Khoảng cách nội dung với viền trong footer */
+    padding: 10px; /* Khoảng cách nội dung với viền trong footer */
     margin-top: auto; /* Đẩy footer xuống cuối trang */
-    padding: 50px; /* Khoảng cách nội dung với viền trong footer (sẽ ghi đè padding trước đó) */
+    padding:5px; /* Khoảng cách nội dung với viền trong footer (sẽ ghi đè padding trước đó) */
     font-size: 15px; /* Kích thước font chữ */
-    
     
   }
 .container-f {
-    max-width: 1200px;
-    margin: 2 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Điều chỉnh chiều cao nếu cần */
     
 }
 
@@ -240,4 +241,4 @@ input[type="radio"]:checked + .navigation .nav-dot {
 
 }
 
-/* Các style khác để tùy chỉnh font, màu sắc, khoảng cách... */
+
