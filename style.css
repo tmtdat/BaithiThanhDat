@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     background-color: #7c7878;
     display: flex;
     flex-direction: column;
@@ -152,14 +152,15 @@ input[type="radio"]:checked + .navigation .nav-dot {
 }
 
 .footer {
-    background-color: #000000;
-    color: white;
-    padding: 30px;
-    margin-top: auto;
-    padding: 0 10%;
-    font-size: 15px;
-}
+    background-color: #000000; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+    padding: 30px; /* Khoảng cách nội dung với viền trong footer */
+    margin-top: auto; /* Đẩy footer xuống cuối trang */
+    padding: 50px; /* Khoảng cách nội dung với viền trong footer (sẽ ghi đè padding trước đó) */
+    font-size: 15px; /* Kích thước font chữ */
 
+    
+  }
 .container-f {
     max-width: 1200px;
     margin: 2 auto;
